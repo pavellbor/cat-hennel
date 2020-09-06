@@ -22,9 +22,9 @@
     <a class="header__button" href="#">Смотреть котиков</a>
     <div class="header__image">
       <picture>
-        <source media="(min-wdith: 1366px)" srcset="img/pic-header-d.jpg 1x, img/pic-header-d@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/pic-header-t.jpg 1x, img/pic-header-d@2x.jpg 2x">
-        <img src="img/pic-header-m.jpg" srcset="img/pic-header-m@2x.jpg 2x" width="" height=""
+        <source media="(min-wdith: 1366px)" srcset="img/pic-header-d.png 1x, img/pic-header-d@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/pic-header-t.png 1x, img/pic-header-d@2x.png 2x">
+        <img src="img/pic-header-m.png" srcset="img/pic-header-m@2x.png 2x" width="" height=""
           alt="Кот породы Мейн-Кунов">
       </picture>
     </div>
@@ -51,110 +51,76 @@
 
   <main>
 
-    <section class="section nurslings">
-      <h2 class="section__title nurslings__title">Питомцы</h2>
-      <p class="section__lead nurslings__lead">Все представители нашего питомника имеют ветеринарный паспорт с отметками
+    <section class="section pets">
+      <h2 class="section__title pets__title">Питомцы</h2>
+      <p class="section__lead pets__lead">Все представители нашего питомника имеют ветеринарный паспорт с отметками
         о прививках и документ с родословной</p>
-      <dl class="nurslings__list">
-        <dt class="nurslings__tab">
-          <button type="button">Коты</button>
-        </dt>
-        <dd class="nurslings__photos photos-nurslings">
-          <ul class="photos-nurslings__list">
-            <li class="photos-nurslings__item">
-              <picture>
-                <source media="(min-width: 1366px)"
-                  srcset="img/pic-nurslings-1-d.jpg 1x, img/pic-nurslings-1-d@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/pic-nurslings-1-t.jpg 1x, img/pic-nurslings-1-t@2x.jpg 2x">
-                <img src="img/pic-nurslings-1-m.jpg" srcset="img/pic-nurslings-1-m@2x.jp 2x" width="" height=""
-                  alt="Белый кот породы Мейн-Кунов">
-              </picture>
-            </li>
-            <li class="photos-nurslings__item photos-nurslings__item--active">
-              <picture>
-                <source media="(min-width: 1366px)"
-                  srcset="img/pic-nurslings-2-d.jpg 1x, img/pic-nurslings-2-d@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/pic-nurslings-2-t.jpg 1x, img/pic-nurslings-2-t@2x.jpg 2x">
-                <img src="img/pic-nurslings-2-m.jpg" srcset="img/pic-nurslings-2-m@2x.jp 2x" width="" height=""
-                  alt="Белый кот породы Мейн-Кунов">
-              </picture>
-            </li>
-            <li class="photos-nurslings__item">
-              <picture>
-                <source media="(min-width: 1366px)"
-                  srcset="img/pic-nurslings-3-d.jpg 1x, img/pic-nurslings-3-d@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/pic-nurslings-3-t.jpg 1x, img/pic-nurslings-3-t@2x.jpg 2x">
-                <img src="img/pic-nurslings-3-m.jpg" srcset="img/pic-nurslings-3-m@2x.jp 2x" width="" height=""
-                  alt="Белый кот породы Мейн-Кунов">
-              </picture>
-            </li>
-          </ul>
-          <button class="arrow arrow--prev photos-nurslings__arrow-prev">Предыдущее фото</button>
-          <button class="arrow arrow--next photos-nurslings__arrow-next">Следующее фото</button>
-          <a class="photos-nurslings__button" href="#">Смотреть больше</a>
-        </dd>
-        <dt class="nurslings__tab nurslings__tab--active">
-          <button type="button">Кошки</button>
-        </dt>
-        <dd class="nurslings__photos photos-nurslings">
-          <ul class="photos-nurslings__list">
-            <li class="photos-nurslings__item">
-              <!-- Фото -->
-            </li>
-            <li class="photos-nurslings__item photos-nurslings__item--active">
-              <!-- Фото -->
-            </li>
-            <li class="photos-nurslings__item">
-              <!-- Фото -->
-            </li>
-          </ul>
-          <button class="arrow arrow--prev photos-nurslings__arrow-prev">Предыдущее фото</button>
-          <button class="arrow arrow--next photos-nurslings__arrow-next">Следующее фото</button>
-          <a class="photos-nurslings__button" href="#">Смотреть больше</a>
-        </dd>
-        <dt class="nurslings__tab nurslings__tab--active">
-          <button type="button">Кошки</button>
-        </dt>
-        <dd class="nurslings__photos photos-nurslings">
-          <ul class="photos-nurslings__list">
-            <li class="photos-nurslings__item">
-              <!-- Фото -->
-            </li>
-            <li class="photos-nurslings__item photos-nurslings__item--active">
-              <!-- Фото -->
-            </li>
-            <li class="photos-nurslings__item">
-              <!-- Фото -->
-            </li>
-          </ul>
-          <button class="arrow arrow--prev photos-nurslings__arrow-prev">Предыдущее фото</button>
-          <button class="arrow arrow--next photos-nurslings__arrow-next">Следующее фото</button>
-          <a class="photos-nurslings__button" href="#">Смотреть больше</a>
-        </dd>
-      </dl>
+      <ul class="pets__list">
+        <li class="pets__item">
+          <a class="pets__tab" href="#photos-pets-1">Коты</a>
+        </li>
+        <li class="pets__item">
+          <a class="pets__tab" href="#photos-pets--2">Кошки</a>
+        </li>
+        <li class="pets__item">
+          <a class="pets__tab" href="#photos-pets--3">Котята</a>
+        </li>
+      </ul>
+      <div class="pets__photos">
+        <ul class="pets__photos photos-pets__list" id="photos-pets-1">
+          <li class="photos-pets__item">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/pic-pets-1-d.jpg 1x, img/pic-pets-1-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/pic-pets-1-t.jpg 1x, img/pic-pets-1-t@2x.jpg 2x">
+              <img src="img/pic-pets-1-m.jpg" srcset="img/pic-pets-1-m@2x.jpg 2x" width="" height=""
+                alt="Белый кот породы Мейн-Кунов">
+            </picture>
+          </li>
+          <li class="photos-pets__item photos-pets__item--active">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/pic-pets-2-d.jpg 1x, img/pic-pets-2-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/pic-pets-2-t.jpg 1x, img/pic-pets-2-t@2x.jpg 2x">
+              <img src="img/pic-pets-2-m.jpg" srcset="img/pic-pets-2-m@2x.jpg 2x" width="" height=""
+                alt="Белый кот породы Мейн-Кунов">
+            </picture>
+          </li>
+          <li class="photos-pets__item">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/pic-pets-3-d.jpg 1x, img/pic-pets-3-d@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/pic-pets-3-t.jpg 1x, img/pic-pets-3-t@2x.jpg 2x">
+              <img src="img/pic-pets-3-m.jpg" srcset="img/pic-pets-3-m@2x.jpg 2x" width="" height=""
+                alt="Белый кот породы Мейн-Кунов">
+            </picture>
+          </li>
+          <button class="arrow-prev photos-pets__arrow-prev">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="arrow-next photos-pets__arrow-next">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+          <a class="photos-pets__button" href="#">Смотреть больше</a>
+        </ul>
+      </div>
     </section>
 
-    <section class="section features">
-      <h2 class="section__title features__title">Особенности породы</h2>
-      <p class="section__lead features__lead">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой
+    <section class="section breed-features">
+      <h2 class="section__title breed-features__title">Особенности породы</h2>
+      <p class="section__lead breed-features__lead">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой
         дом этого питомца, вы получите умное животное, которому нет равных</p>
-      <div class="features__image">
+      <div class="breed-features__image">
         <picture>
-          <source media="(min-width: 1366px)" srcset="img/pic-features-d.jpg 1x, img/pic-features-d@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/pic-features-t.jpg 1x, img/pic-features-t@2x.jpg 2x">
-          <img src="img/pic-features-m.jpg" srcset="img/pic-features-m@2x.jpg 2x" width="" height=""
+          <source media="(min-width: 1366px)" srcset="img/pic-breed-features-d.png 1x, img/pic-breed-features-d@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/pic-breed-features-t.png 1x, img/pic-breed-features-t@2x.png 2x">
+          <img src="img/pic-breed-features-m.png" srcset="img/pic-breed-features-m@2x.png 2x" width="" height=""
             alt="Кот породы Мейн-Кун в круге">
         </picture>
       </div>
-      <ul class="features__list">
-        <li class="features__item features__item--cohabitation">Легко уживается в семьях с детьми или другими животными
+      <ul class="breed-features__list">
+        <li class="breed-features__item breed-features__item--cohabitation">Легко уживается в семьях с детьми или другими животными
         </li>
-        <li class="features__item features__item--instruction">Выполняет команды как дрессированная собака</li>
-        <li class="features__item features__item--weight">Вес может достигать 12 кг, а длина 1 м</li>
-        <li class="features__item features__item--appearance">Внешний вид этой кошки похож на дикую рысь</li>
+        <li class="breed-features__item breed-features__item--instruction">Выполняет команды как дрессированная собака</li>
+        <li class="breed-features__item breed-features__item--weight">Вес может достигать 12 кг, а длина 1 м</li>
+        <li class="breed-features__item breed-features__item--appearance">Внешний вид этой кошки похож на дикую рысь</li>
       </ul>
     </section>
 
@@ -163,13 +129,13 @@
       <p class="section__lead benefits__lead">Приобретая животное в нашем питомнике, вы получите</p>
       <ul class="benefits__list">
         <li class="benefits__item">
-          <a class="benefits__link benefits__link--service">Бесплатное ветеринарное обслуживание 5 лет</a>
+          <a class="benefits__link benefits__link--service" href="#">Бесплатное ветеринарное обслуживание 5 лет</a>
         </li>
         <li class="benefits__item">
-          <a class="benefits__link benefits__link--consultancy">Консультирование по любому вопросу 24 часа в сутки</a>
+          <a class="benefits__link benefits__link--consultancy" href="#">Консультирование по любому вопросу 24 часа в сутки</a>
         </li>
         <li class="benefits__item">
-          <a class="benefits__link benefits__link--nutrition">Индивидуальный подбор питания для вашего кота</a>
+          <a class="benefits__link benefits__link--nutrition" href="#">Индивидуальный подбор питания для вашего кота</a>
         </li>
       </ul>
     </section>
@@ -247,8 +213,12 @@
           </div>
         </blockquote>
       </div>
-      <button class="arrow arrow--prev item-team__arrow-prev">Предыдущий слайд</button>
-      <button class="arrow arrow--next item-team__arrow-next">Следующий слайд</button>
+      <button class="arrow-prev item-team__arrow-prev">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="arrow-next item-team__arrow-next">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
     </section>
 
     <section class="section faq">
@@ -349,8 +319,12 @@
           </div>
         </blockquote>
       </div>
-      <button class="arrow arrow--prev item-team__arrow-prev">Предыдущий слайд</button>
-      <button class="arrow arrow--next item-team__arrow-next">Следующий слайд</button>
+      <button class="arrow-prev item-team__arrow-prev">
+        <span class="visually-hidden">Предыдущий слайд</span>
+      </button>
+      <button class="arrow-next item-team__arrow-next">
+        <span class="visually-hidden">Следующий слайд</span>
+      </button>
     </section>
 
   </main>
@@ -387,4 +361,5 @@
   </footer>
 
 </body>
+
 </html>
